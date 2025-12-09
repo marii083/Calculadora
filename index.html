@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+        <header class="sport-header">
+            <h1>STAR CALCULATOR</h1>
+            <p>A hora de brilhar com os números!</p>
+        </header>
+
+        <div class="main-container">
+            <div class="calculator-grid">
+                <div class="output">
+                    <div data-previous-operand class="previous-operand"></div>
+                    <div data-current-operand class="current-operand"></div>
+                </div>
+
+                <button data-all-clear class="span-two btn-control">AC</button>
+                <button data-delete class="btn-control">DEL</button>
+                <button data-operation class="btn-op">÷</button>
+
+                <button data-number>1</button>
+                <button data-number>2</button>
+                <button data-number>3</button>
+                <button data-operation class="btn-op">×</button>
+
+                <button data-number>4</button>
+                <button data-number>5</button>
+                <button data-number>6</button>
+                <button data-operation class="btn-op">-</button>
+
+                <button data-number>7</button>
+                <button data-number>8</button>
+                <button data-number>9</button>
+                <button data-operation class="btn-op">+</button>
+
+                <button data-number>.</button>
+                <button data-number>0</button>
+                <button data-equals class="span-two btn-equals">=</button>
+            </div>
+
+            <div class="history-container">
+                <h3>Histórico de Estrelas</h3>
+                <ul id="history-list"></ul>
+                <button id="clear-history">Limpar Histórico</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
